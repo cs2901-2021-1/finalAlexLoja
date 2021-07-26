@@ -15,7 +15,7 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()IÝ
+hashCode()java.lang.Object#hashCode()I­
 main.Appjava.lang.ObjectV
 $addCentro(Lmain/CentroDeVacunacion;).main.App#addCentro(Lmain/CentroDeVacunacion;)V4
 notificarUsuarios()main.App#notificarUsuarios()VV
@@ -27,7 +27,8 @@ $darDeAltaCentro(Ljava/lang/String;Z).main.App#darDeAltaCentro(Ljava/lang/Strin
 showInfoCentros()main.App#showInfoCentros()VB
 addUsuario(Lmain/Usuario;)$main.App#addUsuario(Lmain/Usuario;)V"
 
-calcular()main.App#calcular()V(
+calcular()main.App#calcular()VN
+ cerrarCesion(Ljava/lang/String;)*main.App#cerrarCesion(Ljava/lang/String;)V(
 generalInfo()main.App#generalInfo()VÖ
 java.lang.Iterablejava.lang.Objectd
 &forEach(Ljava/util/function/Consumer;):java.lang.Iterable#forEach(Ljava/util/function/Consumer;)VH
@@ -708,4 +709,27 @@ CcomputeIfPresent(Ljava/lang/Object;Ljava/util/function/BiFunction;)cjava.util.
 Èof(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)åjava.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;¹
 Lof(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)ijava.util.Map#of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;ˆ
 2getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Rjava.util.Map#getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;}
-+entry(Ljava/lang/Object;Ljava/lang/Object;)Njava.util.Map#entry(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
++entry(Ljava/lang/Object;Ljava/lang/Object;)Njava.util.Map#entry(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;„
+
+java.lang.Booleanjava.lang.constant.Constablejava.lang.Comparablejava.lang.Objectjava.io.Serializable_
+valueOf(Ljava/lang/String;)@java.lang.Boolean#valueOf(Ljava/lang/String;)Ljava/lang/Boolean;W
+ parseBoolean(Ljava/lang/String;)3java.lang.Boolean#parseBoolean(Ljava/lang/String;)ZK
+equals(Ljava/lang/Object;)-java.lang.Boolean#equals(Ljava/lang/Object;)ZP
+describeConstable()9java.lang.Boolean#describeConstable()Ljava/util/Optional;3
+booleanValue()!java.lang.Boolean#booleanValue()Z<
+
+toString().java.lang.Boolean#toString()Ljava/lang/String;>
+toString(Z)/java.lang.Boolean#toString(Z)Ljava/lang/String;=
+
+valueOf(Z)/java.lang.Boolean#valueOf(Z)Ljava/lang/Boolean;1
+logicalOr(ZZ) java.lang.Boolean#logicalOr(ZZ)Z+
+
+hashCode()java.lang.Boolean#hashCode()I3
+logicalXor(ZZ)!java.lang.Boolean#logicalXor(ZZ)Z-
+compare(ZZ)java.lang.Boolean#compare(ZZ)I-
+hashCode(Z)java.lang.Boolean#hashCode(Z)I3
+logicalAnd(ZZ)!java.lang.Boolean#logicalAnd(ZZ)ZS
+compareTo(Ljava/lang/Boolean;)1java.lang.Boolean#compareTo(Ljava/lang/Boolean;)IK
+<init>(Ljava/lang/String;)-java.lang.Boolean#<init>(Ljava/lang/String;)V)
+	<init>(Z)java.lang.Boolean#<init>(Z)VS
+getBoolean(Ljava/lang/String;)1java.lang.Boolean#getBoolean(Ljava/lang/String;)Z

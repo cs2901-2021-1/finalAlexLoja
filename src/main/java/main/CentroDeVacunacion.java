@@ -52,12 +52,12 @@ public class CentroDeVacunacion {
             parcialVacunado += value;
         }
 
-        avance = totalVacunado * 100 / capacidad;
+        avance = (double) (totalVacunado) * 100 / (capacidad);
 
     }
 
     public void showInfo(){
-        if(alta) {
+        if(Boolean.TRUE.equals(alta)) {
             calcularTotal();
             logger.info("Avance de la vacunación en: " + nombre + "\n" +
                     "Vacunados totalmente: " + totalVacunado + "\n" +
@@ -119,5 +119,6 @@ public class CentroDeVacunacion {
 
     public void setParcialVacunado(int parcialVacunado) {
         this.parcialVacunado = parcialVacunado;
-    }
+    }   
+    
 }

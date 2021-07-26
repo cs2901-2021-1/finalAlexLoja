@@ -6,26 +6,25 @@ import java.util.logging.Logger;
 public class App {
     static final Logger logger = Logger.getLogger(App.class.getName());
     private static App app;
-    private static int vacunadosTotalCentros ;
-    private static int vacunadosParcialCentros;
+    private int vacunadosTotalCentros ;
+    private int vacunadosParcialCentros;
     private static List<Usuario> usuarios;
     private static List<CentroDeVacunacion> centros;
-    private static final int total = 22935533;
+    private static final int TOTAL = 22935533;
 
     public static App getInstance() {
         if (app == null) {
             app = new App();
             usuarios = new ArrayList<>();
             centros = new ArrayList<>();
-            vacunadosTotalCentros = 0;
-            vacunadosParcialCentros = 0;
         }
         return app;
     }
 
     public boolean checkUser(String username, String pass){
         for(var users: usuarios){
-            if(users.getNombre().equals(username) && users.getPassword().equals(pass)){
+            if (users.getNombre().equals(username) && users.getPassword().equals(pass)) {
+                users.setActive(true);
                 return true;
             }
         }
@@ -74,8 +73,17 @@ public class App {
         }
     }
 
-    public void generalInfo(){
+    public void generalInfo() {
         calcular();
-        logger.info("Se ha vacunado un " + vacunadosTotalCentros * 100 / total + "% de la población");
+        logger.info("Se ha vacunado un " + vacunadosTotalCentros * 100 / TOTAL + "% de la población \n"
+                + "Vacunados parciales: " + vacunadosParcialCentros);
+    }
+    
+    public void cerrarCesion(String user) {
+        for (var u : usuarios) {
+            if (u.getNombre().equals(user)) {
+                u.setActive(false);
+            }
+        }
     }
 }

@@ -3,5 +3,5 @@ projectKey=cs2901-2021-1_finalAlexLoja
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.22079
 dashboardUrl=https://sonarcloud.io/dashboard?id=cs2901-2021-1_finalAlexLoja
-ceTaskId=AXrkkln1RTprvxMfpJHD
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXrkkln1RTprvxMfpJHD
+ceTaskId=AXrkuFKlr7WCwZj2bvRR
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXrkuFKlr7WCwZj2bvRR
